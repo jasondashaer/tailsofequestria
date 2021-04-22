@@ -1,0 +1,29 @@
+<form class="{{cssClass}} colorschemebody" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <div class="header-fields colorscheme">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+            <div class="flexrow flex-center">
+                <div class="cuteborder">
+                    <p>type : {{item.type}}</p>
+                </div>
+                <div class="flexrow flex-center flex-right cuteborder">
+                    <label for="data.source">Source</label>
+                    <input class="reductionbox" type="text" name="data.source" value="{{data.source}}" data-dtype="text" />
+                </div>
+            </div>
+         
+        </div>
+    </header>
+
+    <div class="colorscheme">
+
+        <section>
+            <div class="resource noteitem  flex-left cuteborder">
+                <label class="resource-label">Description</label>
+                <textarea type="text" name="data.resume" value="{{data.data.resume}}"
+                    data-dtype="text">{{data.resume}}</textarea>
+            </div>
+        </section>
+    </div>
+</form>

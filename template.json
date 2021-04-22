@@ -1,0 +1,137 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "non_player_character"
+    ],
+    "templates": {
+      "base": {
+        "race": "",
+        "stamina": {
+          "value": 10,
+          "min": 0,
+          "max": 10,
+          "damageReduction": {
+            "value": 0,
+            "min": 0
+          }
+        },
+        "abilities": {
+          "body": {
+            "value": "1d6",
+            "modif": 0
+          },
+          "mind": {
+            "value": "1d6",
+            "modif": 0
+          },
+          "charm": {
+            "value": "1d6",
+            "modif": 0
+          }
+        }
+      }
+    },
+    "character": {
+      "templates": [
+        "base"
+      ],
+      "elementofharmony": "",
+      "level": 1,
+      "friendship": 0
+    },
+    "non_player_character": {
+      "templates": [
+        "base"
+      ],
+      "isUnique": false,
+      "tactics": ""
+    }
+  },
+  "Item": {
+    "types": [
+      "item",
+      "quirk",
+      "talent",
+      "reputation",
+      "spell",
+      "vehicle"
+    ],
+    "templates": {
+      "base": {
+        "description": "",
+        "resume": "",
+        "source": ""
+      }
+    },
+    "item": {
+      "templates": [
+        "base"
+      ],
+      "quantity": 1,
+      "price": 0,
+      "isUnique": false,
+      "isMagic": false
+    },
+    "quirk": {
+      "templates": [
+        "base"
+      ]
+    },
+    "talent": {
+      "templates": [
+        "base"
+      ],
+      "talentLevel": "1d6",
+      "modif": 0,
+      "usePer":{
+        "numberOfUse":"",
+        "maxValue":"",
+        "period":""
+      },
+      "ability": {
+        "value":"0"
+      },
+      "poolPoint": {
+        "isUsed":false,
+        "value":"",
+        "maxValue": ""
+      },
+      "dicePool": {
+        "isUsed":false,
+        "value":""
+      },
+      "addition": {
+        "isUsed":false,
+        "value":""
+      },
+      "used": false
+    },
+    "reputation" : {
+      "templates": [
+        "base"
+      ],
+      "level": "Neutral",
+      "modifier": "None"
+    },
+    "spell" : {
+      "templates": [
+        "base"
+      ],
+      "difficulty": 0
+    },
+    "vehicle": {
+      "templates": [
+        "base"
+      ],
+      "type": "Land",
+      "speed": 0,
+      "handling": "None",
+      "stability": 0,
+      "armor": 0,
+      "cost": 0,
+      "isUnique": false,
+      "isMagic": false
+    }
+  }
+}
